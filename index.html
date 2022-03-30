@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html> 
+    <head> 
+        <title> 
+            Hand Gesture Identifier
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    </head>
+
+    <body> 
+
+        <div class="container">
+
+        <center>
+
+        
+        <h2 class="heading btn-grad"> HAND GESTURE IDENTIFICATION APP 
+            <br>
+            <span> &#128077;&#127995; </span>
+            <span> <img src="https://th.bing.com/th/id/R.19b2c23972621864ab516bcf05e35838?rik=u0TNu6QT351hmA&riu=http%3a%2f%2fclipart-library.com%2fimages%2f6Troz497c.png&ehk=BD15Zf0l%2f7ivknGCslxnf1KmZu4KpFlUCoKgyln3MWM%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" height="30px" width="37.5px"> </span>
+            <span> &#128078;&#127995; </span>
+            <span> &#9996;&#127995; </span>
+            <span> &#129311;&#127995; </span>
+
+        </h2> 
+
+        <br>
+        <h4> Take A Selfie Of A Hand Gesture To Learn It's Meaning </h4>
+        <p> This Model Can Identify The Following Hand Gestures:
+        <span> &#128077;&#127995; | </span>
+        <span> <img src="https://th.bing.com/th/id/R.19b2c23972621864ab516bcf05e35838?rik=u0TNu6QT351hmA&riu=http%3a%2f%2fclipart-library.com%2fimages%2f6Troz497c.png&ehk=BD15Zf0l%2f7ivknGCslxnf1KmZu4KpFlUCoKgyln3MWM%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" height="15px" width="16.625px"> | </span>
+        <span> &#128078;&#127995; | </span>
+        <span> &#9996;&#127995; | </span>
+        <span> &#129311;&#127995; | </span>
+    </p>
+
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label class="btn btn-grad3"> Webcam View - </label>
+            <div id="camera"></div>
+            <br><br>
+            <button onclick="take_snapshot();" class="btn btn-grad1"> Capture Image </button> 
+
+        </div>
+       
+
+            
+            <div class="col-md-4 col-sm-12 col-xs-12 result_div"> 
+                <h3 id="result_hand_gesture_meaning"></h3> 
+                <h3 id="result_hand_gesture_icon"></h3>
+            
+            </div>  
+        
+
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <label class="btn btn-grad3"> Captured Image - </label>
+                <div id="captured_image"></div>
+                <br><br>
+                <button class="btn btn-grad2" onclick="check();"> Identify Image </button>
+
+            </div>
+
+
+        <script src="main.js"></script>
+
+        </center>
+
+        </div>
+      
+        
+        </center>
+    </body>
+</html>
