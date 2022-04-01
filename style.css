@@ -68,13 +68,12 @@
               letter-spacing: 3px;
           }
 
-          #camera, #captured_image {
-              border-radius: 10px;
+          #camera, #result {
               border-style: dashed;
               border-width: 2px;
               border-color: black;
               height: 300px;
-              width: 300px;
+              width: 350px;
           }
 
           .result_div {
